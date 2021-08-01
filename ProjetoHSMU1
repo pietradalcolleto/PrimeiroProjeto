@@ -1,0 +1,40 @@
+import java.util.Scanner;
+public class TreinandoGit {
+
+	public static void main(String[] args) {
+		// Variáveis
+int prova = 0, projeto = 0, exercicio = 0, contribuicao = 0, minimo, media;
+Scanner teclado = new Scanner(System.in);
+
+//Entradas
+
+System.out.println("Nome do aluno: ");
+teclado.nextLine();
+
+System.out.println("Infome a nota da prova:  ");
+prova = teclado.nextInt();
+
+System.out.println("Informe a nota do projeto: ");
+projeto = teclado.nextInt();
+
+System.out.println("Informe a nota do exercicio: ");
+exercicio = teclado.nextInt();
+
+System.out.println("Informe a nota da contribuição: ");
+contribuicao = teclado.nextInt();
+
+//processamento e saída
+
+media = (prova*3 + projeto*3 + exercicio*2 + contribuicao*3)/11;
+System.out.println(" A média do semestre foi: "+ media);
+
+minimo = (10 - media);
+
+if (media >= 8) {
+System.out.println("Aluno Aprovado.");
+} else if (media < 8) {
+	System.out.println("O aluno precisa tirar "+ minimo +" para ser aprovado na prova final");
+}	
+}
+
+	}
