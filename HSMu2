@@ -1,0 +1,50 @@
+import java.util.Scanner;
+public class Exercicio2HsmU {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		int AlunosAprovados = 0, AlunosReprovados = 0, AlunosAF = 0;
+		Scanner teclado = new Scanner(System.in);
+		
+		double notaProva, notaProjeto, notaLista, resultado, mediaMaior, mediaMenor;
+		int pesoProva = 5, pesoProjeto = 3, pesoLista = 2;
+		
+		System.out.print(" Qual o seu nome: ");
+		teclado.nextLine();
+		
+		System.out.print("Quantos alunos tem na sala: ");
+		int totalAlunos = teclado.nextInt();
+		
+		//captura das notas
+		
+		for (int i = 1; i <= totalAlunos; i++) {
+			
+			System.out.print("Digite a nota da prova do aluno: ");
+			notaProva = teclado.nextDouble();
+			System.out.print("Digite a nota do Projeto do aluno: ");
+			notaProjeto = teclado.nextDouble();
+			System.out.print("Digite a nota da Lista de Exercícios do aluno: ");
+			notaLista = teclado.nextDouble();
+			
+			resultado = ((notaProva * pesoProva)+(notaProjeto * pesoProjeto)+(notaLista * pesoLista))/((pesoProva + pesoProjeto + pesoLista));
+	
+			if (resultado < 5) {
+				System.out.println("Resultado: Reprovado");
+				
+			}else if (resultado <= 7.9) {
+				System.out.println("Resultado: Avaliação Final");
+				
+			}else {
+				System.out.println("Resultado: Aprovado");
+				
+			
+		
+		
+		
+		
+			}
+		
+	}
+}
+}
