@@ -1,0 +1,8 @@
+import java.util.Scanner;
+public class Hsm3MediasVetores {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int [] vetor1 = new int [4][28];
+    
+    // duvida no exercicoo
