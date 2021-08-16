@@ -1,1 +1,78 @@
 
+package desenvolvimento5;
+
+class Empresa{
+	String nome;
+	String cnpj;
+	String dataInauguracao;
+	String socio;
+	String filial;
+	String dadosDaSede;
+	double faturamento;
+	
+	void imprimir() {
+		System.out.println("Nome: "+nome);
+		System.out.println("CNPJ: "+cnpj);
+		System.out.println("Sócio: "+socio);
+		System.out.println("Filial: "+filial);
+		System.out.println("Data Inauguração: "+dataInauguracao);
+	}
+	public Empresa(String nome, String cnpj, String socio, String filial, String dataInauguracao, String dadosDaSede) {
+		super();
+		this.nome = nome;
+		this.cnpj = cnpj;
+		this.socio = socio;
+		this.filial = filial;
+		this.dataInauguracao = dataInauguracao;
+		this.dadosDaSede = dadosDaSede;
+	}
+	public double Colaborador(String nome, String matricula, double salarioAnual) {
+		double salario = 12*salarioAnual;
+		return salario;
+	}
+}
+
+class Filial extends Empresa{
+	String dadosFilial;
+
+	public Filial(String nome, String cnpj, String socio, String filial, String dataInauguracao, String dadosFilial) {
+		super(nome, cnpj, socio, filial, dataInauguracao, dadosFilial);
+		
+	}
+	public void Colaborador() {
+		
+	}
+	
+}
+
+class Socio {
+	String nome;
+	String CPF;
+	String telefone;
+	String dataNascimento;
+	
+	void imprimeSocio() {
+		System.out.println("Nome: "+nome);
+		System.out.println("CNPJ: "+CPF);
+		System.out.println("Telefone: "+telefone);
+		System.out.println("Data de Nascimento: "+dataNascimento);
+	}
+	public Socio(String nome, String CPF, String telefone, String dataNascimento) {
+		this.nome = nome;
+		this.CPF = CPF;
+		this.telefone = telefone;
+		this.dataNascimento = dataNascimento;
+	}
+}
+
+
+
+public class Projeto {
+
+	public static void main(String[] args) {
+		
+			
+
+	}
+
+}
