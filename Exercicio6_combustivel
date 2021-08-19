@@ -1,0 +1,21 @@
+<script>
+
+var tipoCombustivel; var qntLitros;
+
+var tipoCombustivel = prompt("Escolha seu combustível: 1 - Alcool ou 2 - Gasolina");
+if (tipoCombustivel !="1" && tipoCombustivel !="2"){
+document.write("Tipo de combustível inválido");
+}
+
+var qntLitros = prompt("Escreva a quantidade de litros que deseja comprar: ");
+}
+if (tipoCombustivel == "1"){
+document.write("Você deverá pagar: R$ "+qntLitros*3.16);
+}else{
+if (tipoCombustivel == "2"){
+document.write("Você deverá pagar: R$ "+qntLitros*4.19);
+}
+
+
+
+</script>
